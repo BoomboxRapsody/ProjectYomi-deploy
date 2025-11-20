@@ -13,7 +13,7 @@ namespace osu.Desktop.Deploy.Uploaders
             this.channel = channel;
         }
 
-        protected override string PackTitle => "osu!(lazer)";
+        protected override string PackTitle => "Project Yomi";
 
         public override void PublishBuild(string version)
         {
