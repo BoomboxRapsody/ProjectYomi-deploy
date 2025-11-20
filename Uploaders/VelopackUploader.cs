@@ -49,7 +49,7 @@ namespace osu.Desktop.Deploy.Uploaders
         {
             Program.RunCommand("dotnet", $"vpk [{operatingSystemName}] pack"
                                          + $" --packTitle=\"{PackTitle}\""
-                                         + $" --packAuthors=\"ppy Pty Ltd\""
+                                         + $" --packAuthors=\"BoomboxRapsody on GitHub\""
                                          + $" --packId=\"{Program.PackageName}\""
                                          + $" --packVersion=\"{version}\""
                                          + $" --runtime=\"{runtimeIdentifier}\""
