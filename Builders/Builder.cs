@@ -70,9 +70,11 @@ namespace osu.Desktop.Deploy.Builders
 
         private static void refreshDirectory(string directory)
         {
+            /*
             if (Directory.Exists(directory))
                 Directory.Delete(directory, true);
             Directory.CreateDirectory(directory);
+            */
         }
     }
 }
