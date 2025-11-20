@@ -3,6 +3,7 @@
 
 using System;
 using System.Diagnostics;
+using System.Text;
 
 namespace osu.Desktop.Deploy
 {
@@ -22,6 +23,7 @@ namespace osu.Desktop.Deploy
 
         public static void Write(string message, ConsoleColor col = ConsoleColor.Gray)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write(stopwatch.ElapsedMilliseconds.ToString().PadRight(8));
 

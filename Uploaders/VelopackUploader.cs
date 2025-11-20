@@ -43,7 +43,7 @@ namespace osu.Desktop.Deploy.Uploaders
         }
 
         // influences the name of the .app bundle. but needs to be osu!(lazer) for windows shortcuts
-        protected virtual string PackTitle => "osu!";
+        protected virtual string PackTitle => "Project Yomi";
 
         public override void PublishBuild(string version)
         {
