@@ -8,8 +8,8 @@ namespace osu.Desktop.Deploy.Builders
 {
     public class LinuxBuilder : Builder
     {
-        private const string app_dir = "osu!.AppDir";
-        private const string app_name = "osu!";
+        private const string app_dir = "ProjectYomi.AppDir";
+        private const string app_name = "Project Yomi";
         private const string os_name = "linux";
 
         private readonly string stagingTarget;
