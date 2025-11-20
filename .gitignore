@@ -4,3 +4,4 @@ bin/*
 obj/*
 staging/*
 releases/*
+android_cert_path.keystore
