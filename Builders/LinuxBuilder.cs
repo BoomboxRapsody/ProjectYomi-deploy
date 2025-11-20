@@ -69,7 +69,7 @@ namespace osu.Desktop.Deploy.Builders
 
             copyDirectory(Path.Combine(Program.TemplatesPath, app_dir), stagingTarget, true);
 
-            File.CreateSymbolicLink(Path.Combine(stagingTarget, ".DirIcon"), "osu.png");
+            File.CreateSymbolicLink(Path.Combine(stagingTarget, ".DirIcon"), "ProjectYomi.png");
 
             Program.RunCommand("chmod", $"+x {stagingTarget}/AppRun");
 
