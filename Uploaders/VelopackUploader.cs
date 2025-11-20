@@ -31,7 +31,7 @@ namespace osu.Desktop.Deploy.Uploaders
         {
             if (Program.CanGitHub)
             {
-                Program.RunCommand("dotnet", $"vpk download github"
+                Program.RunCommand("vpk", $"download github"
                                              + $" --repoUrl=\"{Program.GitHubRepoUrl}\""
                                              + $" --token=\"{Program.GitHubAccessToken}\""
                                              + $" --channel=\"{channel}\""
@@ -47,7 +47,7 @@ namespace osu.Desktop.Deploy.Uploaders
 
         public override void PublishBuild(string version)
         {
-            Program.RunCommand("dotnet", $"vpk [{operatingSystemName}] pack"
+            Program.RunCommand("vpk", $"[{operatingSystemName}] pack"
                                          + $" --packTitle=\"{PackTitle}\""
                                          + $" --packAuthors=\"BoomboxRapsody on GitHub\""
                                          + $" --packId=\"{Program.PackageName}\""
@@ -63,7 +63,7 @@ namespace osu.Desktop.Deploy.Uploaders
 
             if (Program.CanGitHub && Program.GitHubUpload)
             {
-                Program.RunCommand("dotnet", $"vpk upload github"
+                Program.RunCommand("vpk", $"upload github"
                                              + $" --repoUrl=\"{Program.GitHubRepoUrl}\""
                                              + $" --token=\"{Program.GitHubAccessToken}\""
                                              + $" --outputDir=\"{Program.ReleasesPath}\""
