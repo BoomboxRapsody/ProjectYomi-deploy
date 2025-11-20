@@ -1,8 +1,8 @@
-# osu-deploy [![dev chat](https://discordapp.com/api/guilds/188630481301012481/widget.png?style=shield)](https://discord.gg/ppy)
+# ProjectYomi-deploy
 
-Deploy task for [osu!lazer](https://github.com/ppy/osu).
+Deploy task for [Project Yomi](https://github.com/BoomboxRapsody/ProjectYomi).
 
-This is what creates installable copies of lazer.
+This is what creates installable copies of Project Yomi.
 
 Made for internal use; as such documentation is not provided. YMMV.
 
