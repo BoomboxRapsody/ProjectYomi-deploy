@@ -27,6 +27,7 @@ namespace osu.Desktop.Deploy
         public static string SolutionName => GetConfiguration("SolutionName");
         public static string ProjectName => GetConfiguration("ProjectName");
         public static string PackageName => GetConfiguration("PackageName");
+        public static string PackageNameAndroid => GetConfiguration("PackageNameAndroid");
         public static string IconName => GetConfiguration("IconName");
 
         public static bool GitHubUpload => bool.Parse(ConfigurationManager.AppSettings["GitHubUpload"] ?? "false");
