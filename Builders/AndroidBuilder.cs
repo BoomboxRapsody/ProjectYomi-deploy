@@ -42,7 +42,7 @@ namespace osu.Desktop.Deploy.Builders
 
             RunDotnetPublish($"-p:ApplicationVersion={versionCode} {codeSigningArguments}");
 
-            File.Move(Path.Combine(Program.StagingPath, "sh.ppy.osulazer-Signed.apk"), Path.Combine(Program.ReleasesPath, "sh.ppy.osulazer.apk"), true);
+            File.Move(Path.Combine(Program.StagingPath, "com.boomboxrapsody.projectyomi-Signed.apk"), Path.Combine(Program.ReleasesPath, "com.boomboxrapsody.projectyomi.apk"), true);
         }
     }
 }
