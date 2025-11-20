@@ -10,7 +10,7 @@ namespace osu.Desktop.Deploy.Builders
 {
     public class WindowsBuilder : Builder
     {
-        private const string app_name = "osu!.exe";
+        private const string app_name = "ProjectYomi.exe";
         private const string os_name = "win";
         private const string channel = "win";
 
@@ -61,7 +61,7 @@ namespace osu.Desktop.Deploy.Builders
             AttachSatoriGC();
 
             bool rcEditCommand =
-                Program.RunCommand("tools/rcedit-x64.exe", $"\"{Path.Combine(Program.StagingPath, "osu!.exe")}\""
+                Program.RunCommand("tools/rcedit-x64.exe", $"\"{Path.Combine(Program.StagingPath, "ProjectYomi.exe")}\""
                                                            + $" --set-icon \"{IconPath}\"",
                     exitOnFail: false);
 
@@ -71,12 +71,12 @@ namespace osu.Desktop.Deploy.Builders
                 // TODO: Should probably change this to use RuntimeInfo.OS checks instead of fail values
                 bool wineRcEditCommand =
                     Program.RunCommand("wine", $"\"{Path.GetFullPath("tools/rcedit-x64.exe")}\""
-                                               + $" \"{Path.Combine(Program.StagingPath, "osu!.exe")}\""
+                                               + $" \"{Path.Combine(Program.StagingPath, "ProjectYomi.exe")}\""
                                                + $" --set-icon \"{IconPath}\"",
                         exitOnFail: false);
 
                 if (!wineRcEditCommand)
-                    Logger.Error("Failed to set icon on osu!.exe");
+                    Logger.Error("Failed to set icon on ProjectYomi.exe");
             }
         }
     }
