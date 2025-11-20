@@ -47,7 +47,7 @@ namespace osu.Desktop.Deploy.Uploaders
 
         public override void PublishBuild(string version)
         {
-            Program.RunCommand("dotnet", $"vpk [{operatingSystemName}] pack"
+            Program.RunCommand("dotnet", $"vpk pack"
                                          + $" --packTitle=\"{PackTitle}\""
                                          + $" --packAuthors=\"BoomboxRapsody on GitHub\""
                                          + $" --packId=\"{Program.PackageName}\""
