@@ -43,7 +43,7 @@ namespace osu.Desktop.Deploy.Builders
                                          + $" -p:Version={Version}"
                                          + $" --self-contained"
                                          + $" {extraArgs}"
-                                         + $" {Program.ProjectNameAndroid}");
+                                         + $" {Program.ProjectName}");
         }
 
         protected void AttachSatoriGC(string? outputDir = null)
