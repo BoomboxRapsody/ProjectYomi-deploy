@@ -101,7 +101,7 @@ namespace osu.Desktop.Deploy
 
             // ensure version has a suffix
             if (version.Split('-').Length == 1)
-                version = $"{version}-lazer";
+                version = $"{version}-yomi";
 
             Console.ResetColor();
             Console.WriteLine($"Increment Version:     {IncrementVersion}");
@@ -164,6 +164,7 @@ namespace osu.Desktop.Deploy
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine();
+            Console.WriteLine("-------- Project Yomi by BoomboxRapsody --------");
             Console.WriteLine("  Please note that OSU! and PPY are registered trademarks and as such covered by trademark law.");
             Console.WriteLine("  Do not distribute builds of this project publicly that make use of these.");
             Console.ResetColor();
@@ -201,9 +202,9 @@ namespace osu.Desktop.Deploy
                 if (File.Exists(Path.Combine(path, $"{SolutionName}.sln")))
                     break;
 
-                if (Directory.Exists(Path.Combine(path, "osu")) && File.Exists(Path.Combine(path, "osu", $"{SolutionName}.sln")))
+                if (Directory.Exists(Path.Combine(path, "ProjectYomi")) && File.Exists(Path.Combine(path, "ProjectYomi", $"{SolutionName}.sln")))
                 {
-                    path = Path.Combine(path, "osu");
+                    path = Path.Combine(path, "ProjectYomi");
                     break;
                 }
 
@@ -302,3 +303,4 @@ namespace osu.Desktop.Deploy
         }
     }
 }
+
