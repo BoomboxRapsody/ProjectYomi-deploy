@@ -9,8 +9,8 @@ namespace osu.Desktop.Deploy.Builders
 {
     public class MacOSBuilder : Builder
     {
-        private const string app_dir = "osu!.app";
-        private const string app_name = "osu!";
+        private const string app_dir = "ProjectYomi.app";
+        private const string app_name = "Project Yomi";
         private const string os_name = "osx";
 
         private readonly string stagingTarget;
@@ -39,7 +39,7 @@ namespace osu.Desktop.Deploy.Builders
 
         public override Uploader CreateUploader()
         {
-            string extraArgs = $" --signEntitlements=\"{Path.Combine(Environment.CurrentDirectory, "osu.entitlements")}\""
+            string extraArgs = $" --signEntitlements=\"{Path.Combine(Environment.CurrentDirectory, "ProjectYomi.entitlements")}\""
                                + $" --noInst";
 
             if (!string.IsNullOrEmpty(Program.AppleCodeSignCertName))
