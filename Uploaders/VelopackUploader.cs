@@ -49,7 +49,7 @@ namespace osu.Desktop.Deploy.Uploaders
         {
             Program.RunCommand("vpk", $"[{operatingSystemName}] pack"
                                          + $" --packTitle=\"{PackTitle}\""
-                                         + $" --packAuthors=\"BoomboxRapsody on GitHub\""
+                                         + $" --packAuthors=\"NeruGames Studio\""
                                          + $" --packId=\"{Program.PackageName}\""
                                          + $" --packVersion=\"{version}\""
                                          + $" --runtime=\"{runtimeIdentifier}\""
