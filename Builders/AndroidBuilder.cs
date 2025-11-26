@@ -42,7 +42,7 @@ namespace osu.Desktop.Deploy.Builders
 
             RunDotnetPublish($"-p:ApplicationVersion={versionCode} {codeSigningArguments}");
 
-            File.Move(Path.Combine(Program.StagingPath, "com.nerugames_studio.projectyomi-Signed.apk"), Path.Combine(Program.ReleasesPath, "com.nerugames_studio.projectyomi.apk"), true);
+            File.Move(Path.Combine(Program.StagingPath, "com.nekoneru_studio.projectyomi-Signed.apk"), Path.Combine(Program.ReleasesPath, "com.nekoneru_studio.projectyomi.apk"), true);
         }
     }
 }
