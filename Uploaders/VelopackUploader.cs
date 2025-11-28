@@ -49,7 +49,7 @@ namespace osu.Desktop.Deploy.Uploaders
         {
             Program.RunCommand("vpk", $"[{operatingSystemName}] pack"
                                          + $" --packTitle=\"{PackTitle}\""
-                                         + $" --packAuthors=\"NekoNeru Studio\""
+                                         + $" --packAuthors=\"NekoNeru Studios\""
                                          + $" --packId=\"{Program.PackageName}\""
                                          + $" --packVersion=\"{version}\""
                                          + $" --runtime=\"{runtimeIdentifier}\""
